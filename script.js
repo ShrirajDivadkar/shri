@@ -1,3 +1,3 @@
-document.getElementById("clickBtn").addEventListener("click", () => {
-  alert("Hello from your website!");
+document.getElementById("contactBtn").addEventListener("click", () => {
+  alert("Thanks for visiting! You can reach me at shweta@example.com");
 });

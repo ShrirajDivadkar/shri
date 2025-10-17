@@ -3,21 +3,75 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Simple Website</title>
+  <title>Modern Portfolio</title>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <header>
-    <h1>Welcome to My Website</h1>
-  </header>
+<body class="bg-gray-100 text-gray-800">
 
-  <main>
-    <p>This is a simple website made in VS Code and hosted on Vercel.</p>
-    <button id="clickBtn">Click Me</button>
-  </main>
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md sticky top-0 z-10">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-blue-600">MyPortfolio</h1>
+      <ul class="flex space-x-6">
+        <li><a href="#about" class="hover:text-blue-600">About</a></li>
+        <li><a href="#projects" class="hover:text-blue-600">Projects</a></li>
+        <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-  <footer>
-    <p>© 2025 My Website</p>
+  <!-- Hero Section -->
+  <section class="text-center py-20 bg-gradient-to-r from-blue-500 to-indigo-600 text-white">
+    <h2 class="text-4xl font-bold mb-4">Hi, I'm Shriraj 👋</h2>
+    <p class="text-lg mb-6">A passionate learner & future developer.</p>
+    <a href="#projects" class="bg-white text-blue-600 font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-200 transition">
+      View My Work
+    </a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 container mx-auto px-6">
+    <h3 class="text-3xl font-bold mb-4 text-center">About Me</h3>
+    <p class="text-center max-w-2xl mx-auto">
+      I’m learning web development and love creating modern websites.
+      This site is built using HTML, Tailwind CSS, and JavaScript — hosted on Vercel!
+    </p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+      <h3 class="text-3xl font-bold mb-8 text-center">Projects</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-2">Portfolio Website</h4>
+          <p>A responsive personal portfolio using Tailwind CSS.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-2">Landing Page</h4>
+          <p>Simple and elegant landing page design for startups.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-2">Interactive App</h4>
+          <p>Experimenting with JavaScript for small interactive tools.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-gray-100 text-center">
+    <h3 class="text-3xl font-bold mb-6">Get in Touch</h3>
+    <p>Have a project or idea? Let’s connect!</p>
+    <button id="contactBtn" class="mt-4 px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition">
+      Say Hello
+    </button>
+  </section>
+
+  <footer class="bg-gray-800 text-white text-center py-6">
+    <p>© 2025 Shweta | Built with ❤️ and Tailwind</p>
   </footer>
 
   <script src="script.js"></script>
